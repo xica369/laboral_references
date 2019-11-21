@@ -3,19 +3,26 @@
     section.section
       nav.nav.has-shadow
         .container.results.is-short
-          h1 Candidates
-          p {{ count }}
-          input.input.results(v-model="candidate_id")
+          h1: th Candidates {{ count }}
+          input.input.results(type="text", placeholder="candidate_id", v-model="candidate_id")
           a.button.is-info.is-large(v-on:click="created") Candidates
           a.button.is-danger.is-large(v-on:click="search") &times
           a.button.is-info.is-large(v-on:click="references") References
           br
           
-          .container.results
-            .columns.is-two-fifthis(v-for="i in candidates") {{ i.name }} - {{ i.last_name }} - {{ i.phone }} - {{ i.address }}
+          div
+            table
+              thead
+                tr: th Candidates
+                tbody
+                  .container.results
+                    .columns
+                      ol(type="1" start="1")
+                        li.num(v-for="i in candidates") {{ i.name }}  {{ i.last_name }} - {{ i.phone }} - {{ i.address }}
 
           .container.results
-            .columns(v-for="j in laboral_references") {{ j.company_name }}
+            tr(v-for="j in laboral_references") {{ j.company_name }}
+        br
 
 
 </template>
@@ -40,7 +47,7 @@ export default {
   
   computed: {
     count () {
-      return `Encontrados: ${ this.candidates.length }`
+      return `encontrados: ${ this.candidates.length }`
     }
   },
 
