@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Marco",
+        "last_name": "Tzuc May",
+        "phone": "73684763274",
+        "address": "Calle 64 e # 117 - 15"
+    },
+    {
+        "id": 2,
+        "name": "Hegel",
+        "last_name": "Trigo",
+        "phone": "73684763174",
+        "address": "Calle 34 e # 117 - 15"
+      }
+]

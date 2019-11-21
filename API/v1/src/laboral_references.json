@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "company_name": "Carrefour",
+        "contact_name": "Carlos Navarro",
+        "start_at": "20/05/1990",
+        "leave_at": "21/06/1992",
+        "candidate_id": 1
+      },
+      {
+        "id": 2,
+        "company_name": "Exito",
+        "contact_name": "Carlos Navarro",
+        "start_at": "20/05/1990",
+        "leave_at": "21/06/2019",
+        "candidate_id": 1
+      },
+      {
+        "id": 3,
+        "company_name": "Estados financieros sas",
+        "contact_name": "Andres Navarro",
+        "start_at": "20/05/1991",
+        "leave_at": "21/06/1991",
+        "candidate_id": 2
+      },
+      {
+        "id": 4,
+        "company_name": "Caminando",
+        "contact_name": "Carlos Mariano Zapata",
+        "start_at": "20/05/2000",
+        "leave_at": "21/06/2001",
+        "candidate_id": 2
+      }
+]
